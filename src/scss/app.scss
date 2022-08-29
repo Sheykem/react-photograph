@@ -1,0 +1,24 @@
+@import './components/header.scss';
+@import './components/about.scss';
+@import './components/mySecvices.scss';
+
+.wrapper {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+body {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.center {
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+}
+
+.active {
+  background: rgba(254, 95, 30, 0.05);
+  font-weight: bold;
+}

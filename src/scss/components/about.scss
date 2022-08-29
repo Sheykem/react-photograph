@@ -1,0 +1,90 @@
+.box-about {
+  margin-top: 390px;
+  margin-bottom: 260px;
+  display: flex;
+  justify-content: space-between;
+
+  .box-about_vertical {
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+    top: -140px;
+  }
+
+  .box-about_item {
+    p,
+    h2 {
+      position: relative;
+      bottom: -150px;
+      margin-left: 150px;
+      line-height: 20px;
+    }
+    h2 {
+      font-size: 35px;
+      color: black;
+    }
+    .box-about_text {
+      color: grey;
+    }
+  }
+  .box-about_front {
+    position: absolute;
+    left: 0;
+    margin-top: -470px;
+    margin-left: 430px;
+    width: 305px;
+    height: 475px;
+  }
+}
+
+.progress-bar-line {
+  width: 100%;
+  height: 2px;
+  background-color: #22222b;
+  position: relative;
+  margin-left: 100px;
+  top: 200px;
+  img {
+    position: relative;
+    top: -7px;
+    
+  }
+}
+
+.progress-bar-line::before {
+  content: '';
+  width: 6px;
+  height: 11px;
+  display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: -2px;
+ 
+}
+
+.progress-bar-line::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  display: block;
+  height: 2px;
+  background-color: #f2f2f2;
+  
+}
+
+.progress-bar-text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.progress-bar--indesign {
+  width: 65%;
+}
+
+.progress-bar--xd {
+  width: 80%;
+}

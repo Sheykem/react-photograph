@@ -1,0 +1,55 @@
+.title-h2 {
+    font-size: 35px;
+}
+.after-title {
+    position: relative;
+    bottom: 10px;
+    font-size: 18px;
+    color: grey;
+}
+
+
+.service {
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+
+    h3 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+  a{
+    position: relative;
+    top: 20px;
+    text-decoration: none;
+    color:black ;
+    cursor: pointer;
+  }
+  a::after{
+  content: '';
+  width: 25px;
+  height: 1px;
+  display: block;
+  background-color: #22222b;
+  position: absolute;
+  right: -34px;
+  top: 9px;
+  }
+
+  .service_text {
+    color:grey;
+    font-size: 18px;
+    font-weight: 400;
+  }
+   .service-item {
+    width: 300px;
+   margin: auto;
+   margin-top: 40px;
+   text-align: left;
+   .service_icon {
+    position: relative;
+    top: 25px;
+   }
+   }
+}
+
