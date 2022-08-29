@@ -11,10 +11,15 @@ function MyServices(props) {
   ];
 
 
-  const [onClickMore, setOnClickMore] = React.useState(-1) // открыть/закрыть Reed more
+  const [active, setActive] = React.useState(-1) // открыть/закрыть Reed more
   const onClick = (event) => {
-    setOnClickMore(!onClickMore);
     event.preventDefault()
+    const clickedIndex = parseInt(event.currentTarget.getAttribute('data-index'))
+    if (active !== clickedIndex) {
+      setActive(clickedIndex);
+    } else {
+      setActive(-1)
+    }
   }
 
   return (
@@ -38,8 +43,8 @@ function MyServices(props) {
               </div>
               {/* ! cпросить Серёгу {reedMore.map((obj, index) => ( */}
               <a href="photo" className="service_link ">
-                <span onClick={onClick}>Reed More</span>
-                <p> {onClickMore ? 'new info for this menu' : ''}</p>
+                <span data-index={index} onClick={onClick}>Reed More</span>
+                <p> {active === index ? 'new info for this menu' : ''}</p>
               </a>
               {/* ))} */}
             </div>
