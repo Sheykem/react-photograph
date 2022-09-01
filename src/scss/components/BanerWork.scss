@@ -1,0 +1,62 @@
+.btn {
+  color: #fff;
+  background-color: #22222b;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 20px 0px;
+}
+
+.section-banner {
+  margin-bottom: 130px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 362px;
+  background-color: #22222b;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  button {
+    color: #22222b;
+    background-color: #fff;
+    display: inline-block;
+    width: 170px;
+    height: 60px;
+    cursor: pointer;
+  }
+
+  h2 {
+    font-size: 48px;
+    margin-bottom: 38px;
+  }
+}
+
+.section-banner .before-title {
+  font-size: 22px;
+}
+
+.contacts-info {
+  width: 150px;
+  height: 80px;
+  background-color: darkslategrey;
+  border-radius: 30px;
+  color: aqua;
+  list-style: none;
+  margin: auto;
+  margin-right: 50px;
+
+  li {
+    line-height: 20px;
+    position: relative;
+    right: 15px;
+    top: 5px;
+  }
+}

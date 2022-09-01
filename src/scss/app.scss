@@ -1,6 +1,12 @@
 @import './components/header.scss';
 @import './components/about.scss';
 @import './components/mySecvices.scss';
+@import './components/MyPortfolio.scss';
+@import './components/BanerWork.scss';
+@import './components/testimonials.scss';
+@import './components/advantages.scss';
+@import './components/getItTouch.scss';
+@import './components/footer.scss';
 
 .wrapper {
   margin-left: 300px;
@@ -21,4 +27,8 @@ body {
 .active {
   background: rgba(254, 95, 30, 0.05);
   font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
 }

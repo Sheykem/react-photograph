@@ -1,3 +1,7 @@
+.center {
+  display: block;
+}
+
 .title-h2 {
     font-size: 35px;
 }
@@ -12,6 +16,7 @@
 .service {
   display: grid;
   grid-template-columns: 450px 450px 450px;
+  margin-bottom: 280px ;
 
     h3 {
         font-size: 30px;

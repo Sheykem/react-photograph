@@ -1,0 +1,83 @@
+.All-portfolio {
+  margin-top: 1200px;
+  margin-left: 70px;
+  padding-bottom: 320px;
+  h2,
+  p {
+    text-align: center;
+  }
+}
+
+.portfolio {
+  position: relative;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template: repeat(7, 83px) / 1fr 1fr 1fr;
+  grid-gap: 40px 40px;
+  margin-top: 88px;
+  margin-bottom: -163px;
+}
+
+.portfolio-01 {
+  height: 350px;
+  width: 365px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+}
+
+.portfolio-02 {
+  height: 470px;
+  width: 365px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
+}
+
+.portfolio-03 {
+  height: 222px;
+  width: 365px;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
+}
+
+.portfolio-04 {
+  height: 470px;
+  width: 365px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 /2;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 4;
+  grid-row: 4/8;
+}
+
+.portfolio-05 {
+  width: 365px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 /3;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  grid-row: 5/8;
+}
+
+.portfolio-06 {
+  width: 365px;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 /4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 4;
+  grid-row: 4/8;
+}

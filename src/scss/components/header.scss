@@ -1,5 +1,5 @@
 .header-bg {
-   
+
    .header {
   margin-top: -8px;
   width: 100%;
@@ -15,6 +15,7 @@
 
 .nav {
   display: flex;
+  z-index: 100;
   li {
     margin-right: 20px;
     list-style: none;

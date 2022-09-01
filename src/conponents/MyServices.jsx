@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from './Card';
 
 function MyServices(props) {
   const myServices = [
@@ -32,22 +33,7 @@ function MyServices(props) {
 
         <div className="service">
           {myServices.map((obj, index) => (
-            <div key={index} className="service-item">
-              <div className="service_icon service_design">
-                <img src={obj.img} alt="icon" />
-              </div>
-              <h3 className="title-h3">{obj.title}</h3>
-              <div className="service_text">
-                When your customers can buy what you sell from others, that’s called competition.
-                That also makes it a for commodity.
-              </div>
-              {/* ! cпросить Серёгу {reedMore.map((obj, index) => ( */}
-              <a href="photo" className="service_link ">
-                <span data-index={index} onClick={onClick}>Reed More</span>
-                <p> {active === index ? 'new info for this menu' : ''}</p>
-              </a>
-              {/* ))} */}
-            </div>
+            <Card img={obj.img} title={obj.title} key={index} />
           ))}
         </div>
       </div>
@@ -56,4 +42,7 @@ function MyServices(props) {
 }
 
 export default MyServices;
+
+
+
 

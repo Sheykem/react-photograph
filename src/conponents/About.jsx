@@ -1,7 +1,11 @@
 import React from 'react';
 
-function About() {
-  
+function About(props) {
+  const skills = [
+    { title: 'Adobe Photoshop', proc: '100%' },
+    { title: 'Adobe Indesign', proc: '65%' },
+    { title: 'Adobe XD', proc: '85%' },
+  ];
 
   return (
     <div className="wrapper">
@@ -18,28 +22,19 @@ function About() {
             quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for
             quick jigs vex
           </p>
+
           <div className="progress-bar">
-            <div className="progress-bar-line progress-bar--ps">
-              <img src="img/pol-circle.png" alt="" />
-            </div>
-            <div className="progress-bar-text">
-              <p>Adobe Photoshop</p>
-              <p>100%</p>
-            </div>
-            <div className="progress-bar-line progress-bar--indesign">
-              <img src="img/pol-circle.png" alt="" />
-            </div>
-            <div className="progress-bar-text">
-              <p>Adobe Indesign</p>
-              <p>65%</p>
-            </div>
-            <div className="progress-bar-line progress-bar--xd">
-              <img src="img/pol-circle.png" alt="" />
-            </div>
-            <div className="progress-bar-text">
-              <p>Adobe XD</p>
-              <p>80%</p>
-            </div>
+            {skills.map((obj, index) => (
+              <React.Fragment key={index}>
+                <div style={{ width: obj.proc }} className="progress-bar-line progress-bar--ps">
+                  <img src="img/pol-circle.png" alt="" />
+                </div>
+                <div className="progress-bar-text">
+                  <p>{obj.title}</p>
+                  <p>{obj.proc}</p>
+                </div>
+              </React.Fragment>
+            ))}
           </div>
         </div>
       </div>
